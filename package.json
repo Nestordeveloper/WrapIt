@@ -1,0 +1,31 @@
+{
+  "name": "WrapIt",
+  "version": "1.0.1",
+  "publisher": "Nilortegadev",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "compile": "tsc",
+    "pretest": "npm run compile",
+    "test": "node out/test/test.js"
+  },
+  "activationEvents": [
+    "onCommand:extension.wrapInHtmlTags"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "key": "Ctrl+Alt+V",
+        "command": "extension.wrapInHtmlTags",
+        "title": "WrapIt - Wrap in Tags"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/tu-repositorio.git"
+  }
+}
